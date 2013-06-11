@@ -5,7 +5,7 @@ import fit.ColumnFixture;
 public class hoteldetaipagel extends ColumnFixture {
     public String url,breadcrumbname;
     public String verifybreadcrumb(){
-        DefaultSelenium selenium=new DefaultSelenium("10.146.178.29",4442,"*chrome","http://travel.com");
+        DefaultSelenium selenium=new DefaultSelenium("localhost",4442,"*chrome","http://travel.com");
         selenium.start();
         selenium.open(url);
         selenium.click("link="+breadcrumbname);
@@ -18,7 +18,7 @@ public class hoteldetaipagel extends ColumnFixture {
     
      public String verifyrecirculation(){
          
-        DefaultSelenium selenium=new DefaultSelenium("10.146.178.29",4442,"*chrome","http://travel.com");
+        DefaultSelenium selenium=new DefaultSelenium("localhost",4442,"*chrome","http://travel.com");
         selenium.start();
         selenium.open(url);
         selenium.click("//span[@id='gototxt']/a");
