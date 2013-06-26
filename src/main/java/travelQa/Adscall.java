@@ -31,7 +31,10 @@ public class Adscall extends ColumnFixture {
 
                     adurl = strline.substring(0, 3);
                     System.out.println(adurl);
+                }else{
+                    adurl="";
                 }
+
             }
         } catch (IOException e) {
             e.printStackTrace();
